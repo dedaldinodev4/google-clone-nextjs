@@ -33,7 +33,7 @@ Para visualizar os resultados acesse [http://localhost:3000](http://localhost:30
 
 ## Demo
 
-Podes ver o projecto em execução na plataforma [Google-Clone](https://google-clone-nextjs-delta.vercel.app/)
+Podes ver o projecto em execução na plataforma [Vercel](https://google-clone-nextjs-delta.vercel.app/)
 
 ## Screenshots
 ![ScreenShot 01](/public/assets/image1.png)
