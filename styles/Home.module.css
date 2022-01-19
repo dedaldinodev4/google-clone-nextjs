@@ -1,116 +1,131 @@
-.container {
-  padding: 0 2rem;
+/* 
+  @author: Dedaldino4dev@gmail.com
+  @Github: https://github.com/dedaldinodev4
+
+*/
+
+/*  Header */
+.menu {
+  height: 48px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.menu__section {
   display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  font-size: 13px;
+  color: #757575;
+  padding: 12px 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.menu__link.active {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+.menu__link:not(.active) {
+  margin-bottom: 2px;
+}
+
+.menu__section.right {
+  margin-right: 4px;
+}
+
+.menu__section.right .menu__icon {
+  padding: 12px;
+}
+
+.menu__profile {
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.menu__avatar--frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Main */
+.content {
+  display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
+  padding: 56px 8px 0;
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.content__logo {
+  height: 56px;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.content__search {
+  margin-top: 18px;
+  width: 80%;
+  max-width: 736px;
+  padding: 7px 10px 14px 20px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  background: transparent;
+  border-radius: 25px;
+  border: 1px solid #dadce0;
+  outline: 0;
+  margin-bottom: 18px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.content__search:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.content__search:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.content__buttons {
+  margin-top: 30px;
+  padding: 6px 12px;
 }
 
-.title,
-.description {
+.btn {
+  outline: none;
+  border: none;
+  padding: 10px 10px;
   text-align: center;
+  font-size: 14px;
+  margin: 8px;
+  color: #6a6b6e;
+  background: #f3f3f3;
+  border-radius: 8px solid #f3f3f3;
+  cursor: pointer;
+  letter-spacing: 1px;
+
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
+/* Media Query */
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media (min-width: 763px) {
+  .content {
+    padding-top: 120px;
+  }
+  .content__logo {
+    height: 150px;
   }
 }
