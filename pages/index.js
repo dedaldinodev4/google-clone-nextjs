@@ -57,7 +57,7 @@ export default function Home() {
 
         <div className="footer__section footer__links">
           <a>Sobre</a>
-          <Link href={"https://github.com/dedaldinodev4"}>
+          <Link href={"https://github.com/dedaldinodev4/google-clone-nextjs"}>
             <a target="_blank">Repositório</a>
           </Link>
           <Link href={"https://github.com/dedaldinodev4"}>

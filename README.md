@@ -9,7 +9,7 @@ Para clonar e acessar o projecto use:
 # clonar
 git clone https://github.com/dedaldinodev4/google-clone-nextjs.git
 # acessar
-cd google-clone-nextjs.git
+cd google-clone-nextjs
 ```
 
 Para instalar o projeto e suas depedências:
@@ -28,8 +28,12 @@ npm run dev
 yarn dev
 ```
 
-acesse [http://localhost:3000](http://localhost:3000) no seu navegar para visualizar.
+Para visualizar os resultados acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
+
 
 ## Demo
 
-Podes ver o projecto em execução na plataforma 
+Podes ver o projecto em execução na plataforma [Google-Clone](https://google-clone-nextjs-delta.vercel.app/)
+
+## Screenshots
+![ScreenShot 01](/public/assets/image1.png)
